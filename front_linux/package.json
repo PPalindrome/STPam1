@@ -1,0 +1,70 @@
+{
+  "name": "stpam-vue",
+  "private": true,
+  "version": "0.0.0",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "electron ",
+    "electron": "wait-on tcp:50 && electron .",
+    "electron:serve": "concurrently -k \"npm run dev\" \"npm run electron\"",
+    "electron:build": "vite build && electron-builder"
+  },
+  "dependencies": {
+    "@codemirror/lang-cpp": "^6.0.1",
+    "@codemirror/lang-javascript": "^6.1.0",
+    "@codemirror/lang-python": "^6.0.2",
+    "@codemirror/theme-one-dark": "^6.1.0",
+    "@codemirror/view": "^6.3.1",
+    "axios": "^0.26.1",
+    "codemirror": "^6.0.1",
+    "cross-env": "^7.0.3",
+    "echarts": "^5.3.2",
+    "element-plus": "^2.1.9",
+    "esbuild-windows-64": "^0.14.38",
+    "jsencrypt": "^3.2.1",
+    "path": "^0.12.7",
+    "vue": "^3.2.25",
+    "vue-codemirror": "^6.1.1",
+    "vue-router": "^4.0.14",
+    "vue3-puzzle-vcode": "^1.0.5",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.24",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "electron": "^18.1.0",
+    "electron-builder": "^23.0.3",
+    "typescript": "^4.5.4",
+    "unplugin-auto-import": "^0.7.1",
+    "unplugin-vue-components": "^0.19.2",
+    "vite": "^2.9.2",
+    "vue-tsc": "^0.29.8",
+    "wait-on": "^6.0.1"
+  },
+  "build": {
+    "appId": "com.cug-gis.STPAM2.0",
+    "productName": "STPAM",
+    "copyright": "Copyright © 2022 <phw>",
+    "mac": {
+      "category": "public.app- category.utilities"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets",
+      "output": "dist_electron"
+    },
+    "win": {
+      "icon": "public/STPAM-256.ico"
+    }
+  }
+}
