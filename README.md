@@ -1,6 +1,6 @@
-# **本软件和源代码完全原创，已作为本人论文投稿使用，禁止一切改编、商用和搬运，如有发现将视为违法行为**
+# **本软件完全原创。禁止一切对源代码的改编、商用和搬运，如有发现将视为违法行为。此链接仅在本人论文投稿期间可用（后续会开放其他repository）。相关方法已作为专利发表。**
 
-# **This software and source code are completely original and has been used in my thesis submission. All adaptations, commercialization and carry are prohibited and will be considered illegal**
+# **This software is completely original. All adaptations, commercialization, and carry of the source code are prohibited and will be considered illegal. This link is only available during my thesis submission (Another repository may be opened later). The related method has been published as a patent.**
 
 
 
