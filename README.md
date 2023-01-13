@@ -16,10 +16,6 @@
 
 后台：SpringCloud, SpringBoot, SpringSecurity
 
-## 直接访问
-
-http://47.92.157.59:8070/    （服务器不定期关闭维护，可能无法访问）
-
 ## 下载源码使用
 
 1.准备3个及以上的GPU工作节点
